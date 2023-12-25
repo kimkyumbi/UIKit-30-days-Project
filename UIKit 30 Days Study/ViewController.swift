@@ -1,14 +1,10 @@
-//
-//  ViewController.swift
-//  UIKit 30 Days Study
-//
-//  Created by Mac on 12/15/23.
-//
-
 import UIKit
 import SwiftUI
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var myImageView: UIImageView!
+    @IBOutlet weak var label: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,20 +23,20 @@ class ViewController: UIViewController {
     }
 }
 
-struct ViewControllerRepresentable: UIViewControllerRepresentable {
-    typealias UIViewControllerType = ViewController
-    
-    func makeUIViewController(context: Context) -> ViewController {
-        return ViewController()
-    }
-    
-    func updateUIViewController(_ uiViewController: ViewController, context: Context) {
-    }
-}
-
-@available(iOS 13.0.0, *)
-struct ViewPreview: PreviewProvider {
-    static var previews: some View {
-        ViewControllerRepresentable()
-    }
-}
+//struct ViewControllerRepresentable: UIViewControllerRepresentable {
+//    typealias UIViewControllerType = ViewController
+//    
+//    func makeUIViewController(context: Context) -> ViewController {
+//        return ViewController()
+//    }
+//    
+//    func updateUIViewController(_ uiViewController: ViewController, context: Context) {
+//    }
+//}
+//
+//@available(iOS 13.0.0, *)
+//struct ViewPreview: PreviewProvider {
+//    static var previews: some View {
+//        ViewControllerRepresentable()
+//    }
+//}
