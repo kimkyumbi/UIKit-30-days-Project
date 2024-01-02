@@ -1,5 +1,4 @@
 import UIKit
-import SwiftUI
 
 class ViewController: UIViewController {
     
@@ -9,14 +8,6 @@ class ViewController: UIViewController {
         button.backgroundColor = .lightGray
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
-    }()
-    
-    lazy var label: UILabel = {
-        let label = UILabel()
-        label.text = "2024년 파이팅"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textAlignment = .center
-        return label
     }()
     
     override func viewDidLoad() {
