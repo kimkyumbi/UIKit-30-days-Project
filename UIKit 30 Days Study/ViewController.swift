@@ -10,6 +10,14 @@ class ViewController: UIViewController {
         return button
     }()
     
+    lazy var label: UILabel = {
+        let label = UILabel()
+        label.text = "UILabel 입니다"
+        label.backgroundColor = .lightGray
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
